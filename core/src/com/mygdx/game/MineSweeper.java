@@ -344,9 +344,7 @@ public class MineSweeper extends ApplicationAdapter {
 
 	private boolean isMine(int x, int y) {
 		if (x >= 0 && x < width && y >= 0 && y < height) {
-			if (map[x][y]) {
-				return true;
-			}
+			return map[x][y];
 		}
 		return false;
 	}
